@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula Javascript</title>
+</head>
+<body onload="load()">
+    <h3>Aula Javascript</h3>
+    <hr>
+
+    <!-- chamada funcao JS com elemento ONCLICK -->
+    <button type="button" onclick="botao()">Clique Aqui</button>
+    <h3 id="agradecimento"></h3>
+
+    <!-- ex com ONMOUSEOVER -->
+    <p id="mousemove" onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+    <!--
+    <p id="mousemove2" onmousemove="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+    -->
+    <p onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+
+    <!-- declaracao da importacao dos metodos JS -->
+    <script src="main.js"></script>
+</body>
+</html>
